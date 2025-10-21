@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    min-height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+.main_div{
+    display: flex;
+    flex-direction: row;
+}
+.arr_of_users{
+    width: 600px;
+    background-color: rgb(178, 178, 250);
+    
+}
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 117px;
+    background-color: rgb(143, 143, 252);
+}
+footer{
+    font-weight: bold;
+}
+.header_div{
+    color: rgb(41, 41, 41);
+    transition: color 0.3s ease-in-out;
+}
+.header_div:hover,
+.header_div:focus{
+    color: rgb(85, 85, 85);
+}
+.Title_and_posts{
+    width: 600px;
+    background-color: rgb(211, 211, 247);
+}
