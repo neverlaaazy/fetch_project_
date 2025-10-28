@@ -65,3 +65,74 @@ footer{
     width: 600px;
     background-color: rgb(211, 211, 247);
 }
+.buttonC{
+    margin-top: 10px;
+    background-color: rgb(119, 119, 255);
+    transition: all 0.3s ease-in-out;
+}
+.buttonC:hover,
+.buttonC:focus{
+    background-color: rgb(71, 71, 255);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: rgb(211, 211, 247);
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.close:hover,
+.close:focus{
+    color: #333;
+}
+
+.comment {
+  border-bottom: 1px solid rgb(71, 71, 255);
+  padding: 10px 0;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.comment p {
+  margin: 0;
+  color: #666;
+}
+
+.com_post{
+    color: #333;
+    font-weight: bolder;
+}
