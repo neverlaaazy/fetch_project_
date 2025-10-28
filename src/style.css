@@ -38,8 +38,8 @@ h1 {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 10px;
+  text-align: left;
 }
 
 .logo {
@@ -56,7 +56,13 @@ h1 {
 }
 
 .card {
-  padding: 2em;
+  padding: 20px;
+  color: #505050;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover,
+.card:focus{
+  color: #1f1f1f;
 }
 
 .read-the-docs {

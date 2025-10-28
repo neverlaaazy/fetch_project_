@@ -20,9 +20,25 @@ main{
     flex-direction: row;
 }
 .arr_of_users{
-    width: 600px;
+    width: 220px;
     background-color: rgb(178, 178, 250);
     
+}
+.usersInfo{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.UserCard a{
+    color: rgb(78, 78, 109);
+    transition: all 0.3s ease-in-out;
+}
+.UserCard a:hover ,
+.UserCard a:focus{
+    color: rgb(39, 39, 39);
 }
 header, footer{
     display: flex;
@@ -44,6 +60,8 @@ footer{
     color: rgb(85, 85, 85);
 }
 .Title_and_posts{
+    display: flex;
+    flex-direction: column;
     width: 600px;
     background-color: rgb(211, 211, 247);
 }
