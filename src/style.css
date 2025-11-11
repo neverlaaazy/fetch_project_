@@ -56,6 +56,7 @@ h1 {
 }
 
 .card {
+  position: relative;
   padding: 20px;
   color: #505050;
   transition: all 0.3s ease-in-out;
@@ -63,6 +64,19 @@ h1 {
 .card:hover,
 .card:focus{
   color: #1f1f1f;
+}
+.like{
+  position: absolute;
+  top: 30px;
+  right: 5px;
+}
+.btn-like{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-like:hover,
+.btn-like:focus{
+  fill: #535bf2;
 }
 
 .read-the-docs {
