@@ -65,14 +65,28 @@ footer{
     width: 600px;
     background-color: rgb(211, 211, 247);
 }
+
+.div-of-buttons button{
+    color: white;
+}
 .buttonC{
     margin-top: 10px;
     background-color: rgb(119, 119, 255);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .buttonC:hover,
 .buttonC:focus{
+    color: black;
     background-color: rgb(71, 71, 255);
+}
+.buttonD{
+    background-color: rgb(255, 76, 76);
+    transition: all 0.2s ease-in-out;
+}
+.buttonD:hover,
+.buttonD:focus{
+    color: black;
+    background-color: rgb(255, 36, 36);
 }
 
 .modal {

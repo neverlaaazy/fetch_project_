@@ -41,6 +41,19 @@ h1 {
   padding: 10px;
   text-align: left;
 }
+.create-post{
+  padding: 30px;
+  background-color: #989dfd;
+}
+.create-post-button{
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.create-post-button:hover,
+.create-post-button:focus{
+  background-color: black;
+  color: white;
+}
 
 .logo {
   height: 6em;
@@ -67,7 +80,7 @@ h1 {
 }
 .like{
   position: absolute;
-  top: 30px;
+  bottom: 25px;
   right: 5px;
 }
 .btn-like{
