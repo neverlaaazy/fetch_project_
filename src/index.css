@@ -30,11 +30,20 @@ main{
     /* align-items: center; */
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-left: 10px;
+}
+
+.UserCard{
+    background-color: rgba(182, 182, 255, 0);
+    transition: all 0.2s ease-in-out;
+}
+.UserCard:hover,
+.UserCard:focus{
+    background-color: rgb(161, 161, 252);
 }
 .UserCard a{
+    margin-left: 10px;
     color: rgb(78, 78, 109);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .UserCard a:hover ,
 .UserCard a:focus{
