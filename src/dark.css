@@ -1,0 +1,58 @@
+body{
+    color: white;
+}
+
+.header_div{
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+}
+
+.header_div:hover,
+.header_div:focus{
+    color: rgb(177, 177, 177);
+}
+
+header, footer{
+    background-color: rgb(69, 69, 121);
+}
+
+.UserCard a{
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.UserCard a:hover ,
+.UserCard a:focus{
+    color: rgb(211, 211, 211);
+}
+
+.arr_of_users{
+    background-color: rgb(94, 94, 129);
+}
+
+.create-post{
+  background-color: #414369;
+}
+.create-post-button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(58, 58, 58);
+  transition: all 0.2s ease-in-out;
+}
+.create-post-button:hover,
+.create-post-button:focus{
+  background-color: rgb(58, 58, 58);
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover,
+.card:focus{
+  color: #b8b8b8;
+}
+
+#app{
+    background-color: #31324e;
+}
