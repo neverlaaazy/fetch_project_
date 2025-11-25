@@ -14,9 +14,9 @@
         <h1>Fetch-project</h1>
         <div>
           <input type="radio" id="light-theme" name="theme">
-          <label for="light-theme">Светлая тема</label>
+          <label for="light-theme">Light</label>
           <input type="radio" id="dark-theme" name="theme">
-          <label for="dark-theme">Тёмная тема</label>
+          <label for="dark-theme">Dark</label>
         </div>
       </div>
     </header>
@@ -39,15 +39,23 @@
       <div class="footer_div">
         <p>&copy;Шаповалов Сергей, МИДиС, ПИ-232</p>
       </div>
-      <!-- <div class="modal">
-        <div class="modal__wrapper">
-          <div class="modal_comments">
-
-          </div>
-          <div class="modal__buttons">
-            <button class="modal__button">CLOSE</button>
-          </div>
-      </div> -->
     </footer>
+    <div class="modal modal-create-post">
+      <div class="modal-content modal-content-create-post">
+        <span class="close close-create-post">&times;</span>
+        <h3>Create post</h3>
+        <form id="form-create-post">
+          <p>author</p>
+          <select name="userId" id="author-select">
+            <option value=""></option>  
+          </select>
+          <p>title</p>
+          <input type="text" name="title">
+          <p>body</p>
+          <input type="text" name="body">
+          <button type="submit" class="submit-post-btn">Create</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

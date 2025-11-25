@@ -159,3 +159,14 @@ footer{
     color: #333;
     font-weight: bolder;
 }
+
+.modal-content-create-post{
+    color: #333;
+    width: 30%;
+}
+
+#form-create-post{
+    display: grid;
+    gap: 10px;
+    padding-top: 10px;
+}

@@ -154,6 +154,47 @@ document.querySelector(".app_c").addEventListener('click',(e)=>{
 });
 
 //---------------------------------Post-----------------------------
+const modalCreate = document.querySelector(".modal-create-post");
+const createPostButton = document.querySelector(".create-post-button");
+
+function openModalCreate() {
+  modalCreate.style.display = 'block';
+}
+createPostButton.addEventListener('click', openModalCreate);
+
+function closeModalCreate() {
+  modalCreate.style.display = 'none';
+}
+modalCreate.querySelector('.close').addEventListener('click', closeModalCreate);
+
+let formCreate = document.getElementById("form-create-post");
+
+const usersResponse = await fetch('http://localhost:3000/users');
+let users = await usersResponse.json();
+
+function populateAuthorsSelect() {
+  const authorSelect = document.getElementById('author-select');
+  
+  users.forEach(user => {
+    const option = document.createElement('option');
+    option.value = user.id;
+    option.textContent = user.name || `User ${user.id}`;
+    authorSelect.appendChild(option);
+  });
+}
+populateAuthorsSelect();
+
+formCreate.onsubmit = async (e) => {
+  e.preventDefault();
+  let response = await fetch(`http://localhost:3000/posts`,
+      {
+        method: 'POST',
+        body: new FormData(formCreate)
+      });
+  let result = await response.json();
+
+  alert(result.message);
+};
 
 
 //---------------------------------LocalStorage---------------------
