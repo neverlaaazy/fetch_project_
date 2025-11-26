@@ -184,17 +184,29 @@ function populateAuthorsSelect() {
 }
 populateAuthorsSelect();
 
-formCreate.onsubmit = async (e) => {
-  e.preventDefault();
+formCreate.addEventListener('submit' ,async(e)=>{
+    e.preventDefault();
+  let data = {
+    "userId": document.getElementById("author-select").value,
+    "title":document.getElementById("title").value,
+    "body": document.getElementById("body").value
+  }
+  console.log(data);
   let response = await fetch(`http://localhost:3000/posts`,
       {
         method: 'POST',
-        body: new FormData(formCreate)
+        headers: { 
+          'Accept': 'application/json', 
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
       });
   let result = await response.json();
 
   alert(result.message);
-};
+})
+
+
 
 
 //---------------------------------LocalStorage---------------------

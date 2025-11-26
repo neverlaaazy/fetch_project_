@@ -46,13 +46,13 @@
         <h3>Create post</h3>
         <form id="form-create-post">
           <p>author</p>
-          <select name="userId" id="author-select">
+          <select name="userId" id="author-select" required>
             <option value=""></option>  
           </select>
           <p>title</p>
-          <input type="text" name="title">
+          <input type="text" name="title" id="title" required>
           <p>body</p>
-          <input type="text" name="body">
+          <textarea name="body" id="body" required></textarea>
           <button type="submit" class="submit-post-btn">Create</button>
         </form>
       </div>
