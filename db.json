@@ -5,7 +5,7 @@
       "id": "3",
       "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
       "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
-      "likes": 101
+      "likes": 102
     },
     {
       "userId": 1,
@@ -608,7 +608,8 @@
       "id": "bc81",
       "userId": "1",
       "title": "123",
-      "body": "123123123"
+      "body": "123123123",
+      "likes": 1
     }
   ],
   "comments": [

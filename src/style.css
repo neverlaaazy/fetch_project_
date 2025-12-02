@@ -93,6 +93,25 @@ h1 {
 .btn-like:focus{
   fill: #535bf2;
 }
+.favorite{
+  /* display: flex;
+  align-items: center; */
+  position: absolute;
+  bottom: 24px;
+  right: 60px;
+}
+.btn-favorite{
+  /* margin-right: 7px; */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-favorite:hover,
+.btn-favorite:focus{
+  fill: #f2e753;
+}
+.btn-favorite-active{
+  fill: #6d6604;
+}
 
 .read-the-docs {
   color: #888;

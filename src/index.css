@@ -60,14 +60,20 @@ header, footer{
 footer{
     font-weight: bold;
 }
+.reload-count-p{
+    font-weight: lighter;
+}
+#reload-count{
+    font-weight: bold;
+}
 .header_div{
     color: rgb(41, 41, 41);
-    transition: color 0.3s ease-in-out;
+    /* transition: color 0.3s ease-in-out; */
 }
-.header_div:hover,
+/* .header_div:hover,
 .header_div:focus{
     color: rgb(85, 85, 85);
-}
+} */
 .Title_and_posts{
     display: flex;
     flex-direction: column;
